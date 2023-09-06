@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap");
+
+.container {
+  margin: 10px auto;
+  max-width: 1000px;
+  padding: 20px;
+  text-align: center;
+  width: 350px;
+  height: 120px;
+}
+
+body {
+  background-color: #1e293b;
+  color: #94a3b8;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
