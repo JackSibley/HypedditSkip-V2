@@ -6,5 +6,4 @@ Allow to Bypass Hypeddit download gates and download target file directly.
 
 ## Contribution
 
-Suggestions and pull requests are welcomed!.
-# HypedditSkip-V2
+Suggestions and pull requests are welcomed!
