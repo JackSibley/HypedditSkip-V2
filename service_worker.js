@@ -7,12 +7,17 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   originalFilename = request.filename;
   chrome.downloads.download({
     url: request.downloadURL,
-    filename: request.filename,
   });
 });
 
 // Add an event listener to determine the filename
 chrome.downloads.onDeterminingFilename.addListener(function (item, suggest) {
+  // clean filename from invalid characters
+  originalFilename = originalFilename.replace(
+    /[^a-zA-Z0-9\s.\-%\[\]{}()&]/g,
+    ""
+  );
+
   // Extract the file extension from the filename
   const fileExtension = item.filename.split(".").pop();
   console.log(fileExtension);
